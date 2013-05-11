@@ -1,0 +1,14 @@
+
+.masthead
+  %h1.muted Home
+.jumbotron
+  - @users.each do |u|
+    %p< User: #{ h u.name }
+    = link_to u.name, u
+.row-fluid
+  .span4 
+    %p column1 stuff
+  .span4
+    %p colomn2 stuff
+  .span4
+    %p column3 stuff
